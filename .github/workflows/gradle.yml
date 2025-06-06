@@ -1,11 +1,7 @@
 name: Java CI with Gradle
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
+  workflow_dispatch:  # Enables manual trigger from GitHub UI
 jobs:
   build:
     runs-on: ubuntu-latest
